@@ -1,7 +1,16 @@
 module PartyGoer
 
+  def initialize
+   @count = 0
+  end
+
   def drink
-    true
+     @count += 1
+    if @count < 3
+      true
+    else
+      false
+    end
   end
 
   def sing

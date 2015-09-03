@@ -3,20 +3,6 @@ require 'spec_helper'
 class Launcher
   include PartyGoer
   extend PartyGoer
-
-  def initialize
-   @count = 0
-  end
-
-  def drink
-     @count += 1
-    if @count < 3
-      super
-    else
-      false
-    end
-  end
-
 end
 
 describe "The Party" do
